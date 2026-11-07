@@ -4,6 +4,27 @@ on:
     branches: [dev, beta, main]
   pull_request:
 jobs:
+  marketplace:
+    name: HACS Marketplace validation
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Validate dashboard card and screenshots
+        uses: hacs/action@main
+        with:
+          category: plugin
+          comment: "false"
+  screenshots:
+    name: Check README screenshots
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify screenshot assets and README references
+        run: |
+          test -s images/senso4s-mini.png
+          test -s images/senso4s-standard.png
+          grep -Fq '](images/senso4s-mini.png)' README.md
+          grep -Fq '](images/senso4s-standard.png)' README.md
   syntax:
     runs-on: ubuntu-latest
     steps:

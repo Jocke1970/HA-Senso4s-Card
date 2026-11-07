@@ -4,6 +4,16 @@ A read-only Home Assistant Lovelace card for **Senso4s Basic and Senso4s Plus** 
 
 **Current beta: 2026.11.0b3 (7 November 2026)** · Stable `main`: 2026.11.0.
 
+## Screenshots
+
+**Standard layout**
+
+![Senso4s Card Standard: remaining gas, cylinder level, battery, Bluetooth status and expandable sections](images/senso4s-standard.png)
+
+**Mini layout**
+
+![Senso4s Card Mini: compact remaining-gas indicator with battery and Bluetooth icons](images/senso4s-mini.png)
+
 ## Install and upgrade
 
 **Install from `beta` for testing, or `main` for the existing stable release. Never install from `dev`.**
