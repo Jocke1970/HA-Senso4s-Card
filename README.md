@@ -6,6 +6,16 @@ A read-only Home Assistant dashboard card for **Senso4s Basic and Senso4s Plus**
 
 Requires Home Assistant and the [Senso4s Bluetooth integration](https://github.com/Jocke1970/senso4s_ble) with an integrated Senso4s scale.
 
+## Screenshots
+
+**Standard layout**
+
+![Senso4s Card Standard: remaining gas, cylinder level, battery, Bluetooth status and expandable sections](images/senso4s-standard.png)
+
+**Mini layout**
+
+![Senso4s Card Mini: compact remaining-gas indicator with battery and Bluetooth icons](images/senso4s-mini.png)
+
 ## Installation
 
 ### HACS
